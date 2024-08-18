@@ -183,6 +183,8 @@ ul button {
 }
 .habits-title{
     color: rgb(255, 255,255) ;
+    font-size: 30px;
+    font-weight: 900;
 }
 .container{
     display: grid;
@@ -220,6 +222,38 @@ ul button {
     height: 322px;
 }
 
+/* Meet Our Team style */
+
+.meet-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px;
+    background: rgb(34, 34, 34);
+    border-radius: 17px;
+    background-image:image();
+}
+.team-img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+.team-1{
+    position: relative;
+    margin: 10%;
+    right: 15px;
+    
+}
+.team-name{
+    position: absolute;
+    left: 10px;
+    bottom: 2px;
+    color: white;
+}
 /* Footer style */
 
 footer{
@@ -230,7 +264,6 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 100px;
-    /* margin-right: 100px; */
     left: 200px;
 }
 .foot-title{
