@@ -89,7 +89,7 @@ ul button {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
 }
-.banner-add{
+.btn-add{
     width: 224px;
     height: 54px;
     font-size: 18px;
@@ -101,7 +101,7 @@ ul button {
     border: none;
     margin-top: 20px;
 }
-.banner-app{
+.btn-app{
     width: 224px;
     height: 54px;
     font-size: 18px;
@@ -176,12 +176,9 @@ ul button {
 /* Habits style */
 
 .habits{
-    height: 452px;
     margin: 100px;
 }
 .title{
-    width: 50%;
-    margin: auto;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -217,7 +214,10 @@ ul button {
     margin-left: 40px;
 }
 .run-container-text p {
-    width: 450px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
     text-align: left;
 }
 .run-container-text h2{
@@ -361,7 +361,6 @@ select{
 
 footer{
     background-color: rgba(255, 255, 255, 0.1);
-    height: 370px;
 }
 .footer{
     display: grid;
@@ -385,17 +384,17 @@ footer{
     color: rgba(255, 255, 255, 0.5);
 }
 .foot-content{
-    margin-top: 25px;
-    margin-bottom: 25px;
     font-size: 14px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
+    padding-bottom: 15px;
 }
 @media screen and (max-width:576px){
     nav{
         justify-content: space-between;
         margin: 20px;
+
     }
     .ul{
         display: none;
@@ -410,7 +409,67 @@ footer{
     .banner-container{
         margin: 20px;
     }
+    .bp{
+        width: 80%;
+    }
     .banner-img{
         margin: 80px;
     }
+    .img-banner{
+        margin-top: 50px;
+    }
+    .first{
+        left: 300px;
+        top: 750px;
+    }
+    .second{
+        left: 60px;
+        top: 960px;
+    }
+
+.container{
+    grid-template-columns: repeat(1, 1fr);
+}
+.title{
+    padding-top: 500px;
+}
+.content-2{
+    padding-right: 50px;
+}
+.btn{
+    width: 90%;
+}
+.run-container{
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.run-img{
+    margin-left: 7px;
+    width: 100%;
+}
+.bmi-bg{
+    grid-template-columns: repeat(1, 1fr);
+}
+.bmi-title{
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+}
+.team{
+    grid-template-columns: repeat(1, 1fr);
+}
+.team-img{
+    width: 100%;
+    height: 200px;
+    padding-left: 12px;
+}
+.footer{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+}
+.footer-title{
+    margin-left: 0;
+}
 }
