@@ -61,8 +61,12 @@ ul li a {
     text-decoration: none;
 }
 ul button {
+    border: none;
     border-radius: 8px ;
     background: rgb(230, 83, 60);
+}
+.bar{
+    display: none;
 }
 /* banner style */
 
@@ -84,8 +88,6 @@ ul button {
 #shape{
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
 }
 .banner-add{
     width: 224px;
@@ -96,6 +98,7 @@ ul button {
     color: rgb(255, 255, 255);
     background-color: rgb(230, 83, 60);
     border-radius: 42px;
+    border: none;
     margin-top: 20px;
 }
 .banner-app{
@@ -106,6 +109,7 @@ ul button {
     background-color: rgb(24, 100, 121);
     color: rgb(255, 255, 255);
     border-radius: 42px;
+    border: none;
     margin-top: 20px;
 }
 .banner-img{
@@ -205,21 +209,120 @@ ul button {
 .run-container{
     margin: 100px;
     background-color: rgb(34, 34, 34);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 150px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
 }
 .run-container-text{
+    margin-left: 40px;
+}
+.run-container-text p {
+    width: 450px;
     text-align: left;
 }
 .run-container-text h2{
     color: rgb(255, 255, 255);
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 38px;
+    font-weight: 800;
+    width: 250px;
 }
 .run-container-img{
-    width: 366px; 
-    height: 322px;
+    margin: 30px;
+}
+.run-img{
+    width: 250px;
+    height: 220px;
+    border-radius: 20px;
+    margin-left: 550px;
+}
+.btn{
+    color: azure;
+    background-color: rgb(230, 83, 60);
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* BMI Calculator style */
+
+.bmi-title{
+    width: 38%;
+    margin: auto;
+    text-align: left;
+}
+.bmi-h1{
+    color: rgb(255, 255, 255);
+}
+.bmi-p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+.bmi-bg{
+    background-color: rgb(34, 34, 34);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+table{      
+    border-collapse: collapse;
+}
+tr{
+    text-align: center;
+    
+}
+th{
+    color: white;
+    font-size: 16px;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+td, th {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.bmi-h2{
+    color: white;
+}
+.bmi-left{
+    padding: 0 0 0 100px;
+}
+.calculator{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+}
+input{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 18px;
+}
+select{
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 18px;
+}
+.select{
+    width: 100%;
+    grid-column: span 2;
+}
+.cal-btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 83, 60);
 }
 
 /* Meet Our Team style */
@@ -290,7 +393,24 @@ footer{
     text-align: center;
 }
 @media screen and (max-width:576px){
-    nav ul{
-        visibility: hidden;
+    nav{
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .ul{
+        display: none;
+    }
+    .bar{
+        display: block;
+        color: aliceblue;
+    }
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-container{
+        margin: 20px;
+    }
+    .banner-img{
+        margin: 80px;
     }
 }
